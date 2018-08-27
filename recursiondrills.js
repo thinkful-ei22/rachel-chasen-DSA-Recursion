@@ -43,13 +43,29 @@
 // console.log(reverseString('hello'));
 
 
-////nth Triangular Number////
+// //nth Triangular Number////
 
-function nTriangle(num){
-  if(num===1){
-    return 1;
+// function nTriangle(num){
+//   if(num===1){
+//     return 1;
+//   }
+//   return num + nTriangle(num-1);
+// }
+
+// console.log(nTriangle(7));
+
+//Split String
+
+function splitString(str, sep) {
+
+  if (str.length === 0) {
+    return '';
   }
-  return num + nTriangle(num-1);
-}
+  if (str[1] === sep ) {
+    return [str[0], ...splitString(str.slice(2))]
+  }
+  else return [str[0] + splitString(str.slice(1))]
 
-console.log(nTriangle(7));
+};
+
+console.log(splitString('this is a split string', "s"))
