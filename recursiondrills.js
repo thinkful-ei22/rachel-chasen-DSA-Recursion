@@ -14,3 +14,17 @@
 
 // let totalSheep = 7;
 // countingSheep(7);
+
+// //Array Double
+
+// function double(arr) {
+//   if (arr.length === 0) {
+//     return [];
+//   } else {
+//     const doubledNum = (arr[0] * 2)
+//     return [doubledNum, ...double(arr.slice(1))]
+//   }
+// }
+// let input = [2,5,10]
+// console.log(double(input))
+// // [4,10,20]
