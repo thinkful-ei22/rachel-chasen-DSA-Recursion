@@ -28,3 +28,14 @@
 // let input = [2,5,10]
 // console.log(double(input))
 // // [4,10,20]
+
+// function reverseString(str){
+//   if(str===''){
+//     return '';
+//   }
+//   const newChar = str[str.length-1];
+//   return newChar + reverseString(str.slice(0, -1));
+  
+// }
+
+// console.log(reverseString('hello'));
