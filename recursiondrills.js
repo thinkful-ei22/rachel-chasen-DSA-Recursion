@@ -29,6 +29,8 @@
 // console.log(double(input))
 // // [4,10,20]
 
+////REVERSE STRING//
+
 // function reverseString(str){
 //   if(str===''){
 //     return '';
@@ -39,3 +41,15 @@
 // }
 
 // console.log(reverseString('hello'));
+
+
+////nth Triangular Number////
+
+function nTriangle(num){
+  if(num===1){
+    return 1;
+  }
+  return num + nTriangle(num-1);
+}
+
+console.log(nTriangle(7));
