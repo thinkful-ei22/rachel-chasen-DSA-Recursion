@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // //Counting Sheep
 // function countingSheep(totalSheep) {
@@ -56,16 +56,67 @@
 
 //Split String
 
-function splitString(str, sep) {
+// function splitString(str, sep){
+//   let idx = str.indexOf(sep);
+//   if (idx === -1){
+//     return [str];
+//   }
+//   return [str.slice(0,idx)].concat(splitString(str.slice(idx + sep.length), sep));
+// }
 
-  if (str.length === 0) {
-    return '';
-  }
-  if (str[1] === sep ) {
-    return [str[0], ...splitString(str.slice(2))]
-  }
-  else return [str[0] + splitString(str.slice(1))]
 
-};
+//in progress///
+// function splitString(str, sep) {
+//   console.log(str[1]);
+//   if (str.length === 0) {
+//     return '';
+//   }
+//   if (str[1] === sep ) {
+//     return [str[0], ...splitString(str.slice(2), sep)];
+//   }
+//   else {
+//     // console.log(str[0]);
+//     return [str[0] + splitString(str.slice(1), sep)];
+//   }
+// }
 
-console.log(splitString('this is a split string', "s"))
+// console.log(splitString('hello hello hello', ' '));
+
+
+//Binary//
+
+// const binaryRep = function(input) {
+//   //base case
+//   if (input<=0) {
+//     return '';
+//   }
+//   const binaryStr = Math.floor(input%2)
+//   return binaryRep(Math.floor(input/2)) + binaryStr
+// }
+
+// console.log(binaryRep(21))
+
+
+//fibonacci///
+
+// const fibseq = length => {
+//   if (length === 1)
+//     return [1];
+//   let arr = fibseq(length - 1);
+//   arr.push(arr[arr.length - 1] + arr[arr.length - 2] || 1);
+//   return arr;
+// };
+
+// console.log(fibseq(8));
+
+///factorial/////
+
+// function factorial(num) {
+//   if (num === 0) {
+//     return 1;
+//   } 
+//   return num * factorial(num - 1);
+// }
+
+// console.log(factorial(3));
+
